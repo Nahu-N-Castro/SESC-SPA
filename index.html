@@ -1,37 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <title>SESC</title>
-    <link rel="stylesheet" href="public/styles.css">
+    <link rel="stylesheet" href="public/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="flex flex-col items-center bg-zinc-800 font-Heebo text-white">
+    <nav
+      class="flex w-full h-20 md:w-[800px] md:h-[10vh] items-center justify-between px-5">
+      <img class="w-16 h-16 rounded-full" src="/public/logo.png" alt="logo" />
+      <section class="flex gap-5 items-center font-bold text-white text-sm">
+        <button
+          class="bg-orange-500 px-3 py-2.5 rounded-md text-sm hover:bg-white hover:text-orange-500 transition-all">
+          LLAMAR AHORA
+        </button>
+        <button
+          class="hidden md:flex md:px-3 md:py-2 md:rounded-md border-2 border-transparent hover:border-2 hover:border-orange-500 transition-all">
+          INICIO
+        </button>
+        <button
+          class="hidden md:flex md:px-3 md:py-2 md:rounded-md border-2 border-transparent hover:border-2 hover:border-orange-500 transition-all">
+          CONTACTO
+        </button>
+        <button
+          class="hidden md:flex md:px-3 md:py-2 md:rounded-md border-2 border-transparent hover:border-2 hover:border-orange-500 transition-all">
+          PROYECTOS
+        </button>
+        <button class="md:hidden">
+          <img src="/public/menu.png" alt="menu" />
+        </button>
+      </section>
+    </nav>
 
-</head>
-<body class=" bg-zinc-800">
-    <header class="flex justify-center">
-        <nav class="flex w-[800px] h-[90px] items-center justify-between px-5">
-            <img class="w-16 h-16 rounded-full" src="/public/logo.png" alt="logo">
-            <section class="flex gap-5 items-center">     
-                <button class="bg-orange-500 px-3 py-2.5 rounded-md text-white text-sm font-bold hover:bg-white hover:text-orange-500 transition-all">LLAMAR AHORA</button>
-                <button class="hidden md:flex md:px-3 md:py-2 md:rounded-md text-white text-sm hover:text-orange-500 transition-all">INICIO</button>
-                <button class="hidden md:flex md:px-3 md:py-2 md:rounded-md text-white text-sm hover:text-orange-500 transition-all">CONTACTO</button>
-                <button class="hidden md:flex md:px-3 md:py-2 md:rounded-md text-white text-sm hover:text-orange-500 transition-all">PROYECTOS</button>
-                <button class="md:hidden"><img src="/public/menu.png" alt="menu"></button>
-            </section>
-        </nav>
-    <header>
-    <section class="bg-orange-600">
-        <div>
-            <h1>BIENVENIDOS A</h1>
-            <h1>SERVICIOS</h1>
-            <h1>ESPECIALIZADOS</h1>
-        </div>
-        <h3>Electricistas Domésticos, Comerciales e Industriales, con sede en Córdoba Capital</h3>
-        <div class="w-40 h-16 px-6 py-4 rounded justify-start items-start flex">
-            <h1 class="text-white text-xl font-medium font-['Heebo']">Contactanos</>
-          </div>
-        
+    <section
+      class="flex flex-col w-full h-[90vh] justify-center p-20 bg-local md:bg-cover gap-8"
+      style="background-image: url('/public/bg-landing.png')">
+      <h1 class="font-bold text-5xl tracking-wider leading-[4rem]">
+        BIENVENIDOS A <br />
+        SERVICIOS<br />ESPECIALIZADOS
+      </h1>
+
+      <h3 class="text-xl tracking-widest">
+        Electricistas Domésticos, Comerciales e Industriales,<br />
+        con sede en Córdoba Capital.
+      </h3>
+
+      <button
+        class="w-40 h-16 rounded-lg justify-center items-center flex border-2 border-orange-500 text-white text-xl font-medium font-Heebo">
+        Contactanos
+      </button>
     </section>
-</body>
+
+    <div class="w-[95%] flex flex-col justify-center items-center gap-10">
+      <section class="flex flex-col w-full px-5 py-8 gap-14">
+        <article class="flex flex-col items-center lg:flex-row px-24 gap-10">
+          <div
+            class="w-[36rem] h-[24rem] bg-cover flex justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
+            style="
+              background-image: url('/public/home.png');
+              letter-spacing: 3.6px;
+            ">
+            DOMICILIARIA
+          </div>
+          <p
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            Brindamos una amplia gama de servicios eléctricos para el hogar,
+            desde la instalación hasta las reparaciones y el mantenimiento para
+            garantizar que su casa sea eléctricamente segura. Nuestros
+            electricistas domésticos calificados por ERSEP se aseguran de que su
+            hogar esté equipado con los más altos estándares.
+          </p>
+        </article>
+        <article class="flex flex-col items-center lg:flex-row px-24 gap-10">
+          <p
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            Nuestros electricistas comerciales están dedicados a brindar
+            soluciones de calidad, innovadoras y rentables para clientes
+            comerciales. Nos aseguramos de que cada proyecto se complete dentro
+            del tiempo especificado para cumplir con el más alto nivel de
+            clientes. Nuestros profesionales tienen como objetivo ofrecer a cada
+            cliente un servicio perfecto para reducir las interrupciones y el
+            estrés y, al mismo tiempo, ofrecer resultados que ofrezcan la mejor
+            relación calidad-precio.
+          </p>
+          <div
+            class="w-[36rem] h-[24rem] bg-cover flex justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
+            style="
+              background-image: url('/public/comercial.png');
+              letter-spacing: 3.6px;
+            ">
+            COMERCIAL
+          </div>
+        </article>
+        <article class="flex flex-col items-center lg:flex-row px-24 gap-10">
+          <div
+            class="w-[36rem] h-[24rem] bg-cover flex justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
+            style="
+              background-image: url('/public/industry.png');
+              letter-spacing: 3.6px;
+            ">
+            INDUSTRIAL
+          </div>
+          <p
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            Contamos con una amplia experiencia en trabajos eléctricos
+            industriales. Cualesquiera que sean sus necesidades específicas,
+            estamos comprometidos a ayudar a nuestros clientes a planificar y
+            ejecutar sus proyectos de prueba, mantenimiento e instalación de
+            manera profesional, cumpliendo con todos los requisitos de salud y
+            seguridad, regulaciones de construcción y estándares de la
+            industria.
+          </p>
+        </article>
+        <article class="flex flex-col items-center lg:flex-row px-24 gap-10">
+          <p
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            nuestro compromiso es su tranquilidad. Nos encargamos de la
+            instalación de sistemas de seguridad integrales que incluyen alarmas
+            y cámaras para brindarle la protección que usted y su hogar merecen.
+            Nuestra experiencia y atención a los detalles garantizan que su
+            propiedad esté resguardada en todo momento. La seguridad de su
+            familia y sus bienes es nuestra prioridad.
+          </p>
+          <div
+            class="w-[36rem] h-[24rem] bg-cover flex justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
+            style="
+              background-image: url('/public/security.png');
+              letter-spacing: 3.6px;
+            ">
+            SEGURIDAD
+          </div>
+        </article>
+        <article class="flex flex-col items-center lg:flex-row px-24 gap-10">
+          <div
+            class="w-[36rem] h-[24rem] bg-cover flex flex-col justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
+            style="
+              background-image: url('/public/renewable-energy.png');
+              letter-spacing: 3.6px;
+            ">
+            <h1>ENERGIAS</h1>
+            <h1>RENOVABLES</h1>
+          </div>
+          <p
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            Brindamos una amplia gama de servicios eléctricos para el hogar,
+            desde la instalación hasta las reparaciones y el mantenimiento para
+            garantizar que su casa sea eléctricamente segura. Nuestros
+            electricistas domésticos calificados por ERSEP se aseguran de que su
+            hogar esté equipado con los más altos estándares.
+          </p>
+        </article>
+      </section>
+      <section
+        class="flex justify-center items-center rounded-2xl w-full h-[40rem] bg-cover bg-local font-bold"
+        style="background-image: url('/public/we-are-ready.jpeg')">
+        <div
+          class="w-2/5 h-48 px-20 py-12 bg-black bg-opacity-30 rounded-2xl backdrop-blur-xl flex-col justify-center items-start gap-5 flex">
+          <div class="text-xl">
+            Estamos listos para solucionar problemas electricos
+          </div>
+          <button
+            class="px-12 py-2 bg-orange-500 rounded text-sm font-normal">
+            Contactanos
+          </button>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
