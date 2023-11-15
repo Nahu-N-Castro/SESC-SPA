@@ -16,13 +16,14 @@
   </head>
   <body class="flex flex-col items-center bg-zinc-800 font-Heebo text-white">
     <nav
-      class="flex w-full h-20 lg:w-[800px] lg:h-[10vh] items-center justify-between lg:px-5">
+      class="flex w-full h-20 lg:w-[800px] lg:h-[10vh] items-center justify-between px-5">
       <img class="w-16 h-16 rounded-full" src="/public/logo.png" alt="logo" />
       <section class="flex gap-5 items-center font-bold text-white text-sm">
-        <button
-          class="bg-orange-500 px-3 py-2.5 rounded-md text-sm hover:bg-white hover:text-orange-500 transition-all">
+        <a
+          class="flex justify-center items-center bg-orange-500 px-3 py-3 rounded-md text-sm hover:bg-white hover:text-orange-500 transition-all"
+          href="tel:+543512922784">
           LLAMAR AHORA
-        </button>
+        </a>
         <button
           class="hidden lg:flex md:px-3 md:py-2 md:rounded-md border-2 border-transparent hover:border-2 hover:border-orange-500 transition-all">
           INICIO
@@ -44,7 +45,8 @@
     <section
       class="flex flex-col w-full h-[90vh] justify-center p-5 lg:p-20 bg-local bg-right bg-cover gap-8"
       style="background-image: url('/public/bg-landing.png')">
-      <h1 class="font-bold text-3xl lg:text-5xl tracking-wider leading-10 lg:leading-[4rem]">
+      <h1
+        class="font-bold text-3xl lg:text-5xl tracking-wider leading-10 lg:leading-[4rem]">
         BIENVENIDOS A <br />
         SERVICIOS<br />ESPECIALIZADOS
       </h1>
@@ -55,13 +57,17 @@
       </h3>
 
       <button
-        class="w-40 h-16 rounded-lg justify-center items-center flex border-2 border-orange-500 text-white text-xl font-medium font-Heebo">
+        class="w-40 h-16 rounded-lg justify-center items-center flex border-2 border-orange-500 text-white text-xl font-medium hover:bg-orange-500 transition-all">
         Contactanos
       </button>
-      <img class="w-10 lg:w-14 absolute bottom-0 inset-x-0 mx-auto animate-bounce "  src="/public/arrow.png" alt="flecha">
+      <img
+        class="w-10 lg:w-14 absolute bottom-[12px] lg:bottom-0 inset-x-0 mx-auto animate-bounce"
+        src="/public/arrow.png"
+        alt="flecha" />
     </section>
 
-    <div class="flex flex-col justify-center items-center gap-10 lg:px-8">
+    <div
+      class="flex flex-col justify-center items-center gap-10 lg:px-8 w-full lg:mb-1 mb-10">
       <section class="flex flex-col w-full px-5 py-8 gap-14">
         <article class="flex flex-col items-center lg:flex-row lg:px-24 gap-10">
           <div
@@ -73,7 +79,7 @@
             DOMICILIARIA
           </div>
           <p
-            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light break-words">
             Brindamos una amplia gama de servicios eléctricos para el hogar,
             desde la instalación hasta las reparaciones y el mantenimiento para
             garantizar que su casa sea eléctricamente segura. Nuestros
@@ -81,9 +87,10 @@
             hogar esté equipado con los más altos estándares.
           </p>
         </article>
-        <article class="flex flex-col-reverse items-center lg:flex-row lg:px-24 gap-10">
+        <article
+          class="flex flex-col-reverse items-center lg:flex-row lg:px-24 gap-10">
           <p
-            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light break-words">
             Nuestros electricistas comerciales están dedicados a brindar
             soluciones de calidad, innovadoras y rentables para clientes
             comerciales. Nos aseguramos de que cada proyecto se complete dentro
@@ -92,17 +99,17 @@
             cliente un servicio perfecto para reducir las interrupciones y el
             estrés y, al mismo tiempo, ofrecer resultados que ofrezcan la mejor
             relación calidad-precio.
-            <div
-              class="w-80 h-80 lg:w-[36rem] lg:h-[24rem] bg-cover flex justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
-              style="
-                background-image: url('/public/comercial.png');
-                letter-spacing: 3.6px;
-              ">
-              COMERCIAL
-            </div>
           </p>
+          <div
+            class="w-80 h-80 lg:w-[36rem] lg:h-[24rem] bg-cover flex justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
+            style="
+              background-image: url('/public/comercial.png');
+              letter-spacing: 3.6px;
+            ">
+            COMERCIAL
+          </div>
         </article>
-        <article class="flex flex-col items-center lg:flex-row px-24 gap-10">
+        <article class="flex flex-col items-center lg:flex-row lg:px-24 gap-10">
           <div
             class="w-80 h-80 lg:w-[36rem] lg:h-[24rem] bg-cover flex justify-center items-center rounded-2xl text-3xl lg:text-4xl font-bold"
             style="
@@ -122,9 +129,10 @@
             industria.
           </p>
         </article>
-        <article class="flex flex-col-reverse items-center lg:flex-row lg:px-24 gap-10">
+        <article
+          class="flex flex-col-reverse items-center lg:flex-row lg:px-24 gap-10">
           <p
-            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light break-words">
             nuestro compromiso es su tranquilidad. Nos encargamos de la
             instalación de sistemas de seguridad integrales que incluyen alarmas
             y cámaras para brindarle la protección que usted y su hogar merecen.
@@ -152,7 +160,7 @@
             <h1>RENOVABLES</h1>
           </div>
           <p
-            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light">
+            class="flex w-full items-center uppercase text-base lg:text-xl xl:text-2xl font-light break-words">
             Brindamos una amplia gama de servicios eléctricos para el hogar,
             desde la instalación hasta las reparaciones y el mantenimiento para
             garantizar que su casa sea eléctricamente segura. Nuestros
@@ -162,20 +170,21 @@
         </article>
       </section>
       <section
-        class="flex justify-center items-center rounded-2xl w-full h-[40rem] bg-cover bg-local font-bold"
+        class="flex justify-center items-center rounded-2xl w-full h-[40rem] bg-cover bg-local font-bold p-5"
         style="background-image: url('/public/we-are-ready.jpeg')">
         <div
           class="w-[35rem] lg:w-[45rem] h-48 px-20 py-12 bg-black bg-opacity-30 rounded-2xl backdrop-blur-xl flex-col justify-center items-start gap-5 flex">
           <div class="text-xl">
             Estamos listos para solucionar problemas electricos
           </div>
-          <button class="px-12 py-2 bg-orange-500 rounded text-sm">
+          <button class="px-12 py-2 bg-orange-500 rounded text-sm lg:text-base">
             Contactanos
           </button>
         </div>
       </section>
 
-      <section class="grid grid-cols-2 xl:grid-cols-4 xl:h-[30rem] gap-3 p-5 w-full h-[50rem] ">
+      <section
+        class="grid grid-cols-2 xl:grid-cols-4 xl:h-[30rem] gap-3 p-5 w-full h-[50rem]">
         <div class="flex flex-col w-full gap-3">
           <div class="">
             <h1 class="uppercase font-bold text-3xl">Nuestros Servicios</h1>
@@ -184,7 +193,8 @@
           <div
             class="h-full px-3 py-5 rounded-xl flex items-end bg-cover bg-center"
             style="background-image: url('/public/tableros.png')">
-            <button class="px-5 py-1 bg-orange-500 rounded text-sm font-bold">
+            <button
+              class="px-5 py-1 bg-orange-500 rounded text-sm lg:text-base font-bold">
               Montajes y Tableros Electricos
             </button>
           </div>
@@ -194,14 +204,16 @@
           <div
             class="h-full px-3 py-5 rounded-xl flex items-end bg-cover bg-center"
             style="background-image: url('/public/tierra.png')">
-            <button class="px-5 py-1 bg-orange-500 rounded text-sm font-bold">
+            <button
+              class="px-5 py-1 bg-orange-500 rounded text-sm lg:text-base font-bold">
               Puestas a Tierra
             </button>
           </div>
           <div
             class="h-2/3 px-3 py-5 rounded-xl flex items-end bg-cover bg-center"
             style="background-image: url('/public/iluminacion.png')">
-            <button class="px-5 py-1 bg-orange-500 rounded text-sm font-bold">
+            <button
+              class="px-5 py-1 bg-orange-500 rounded text-sm lg:text-base font-bold">
               Iluminaciones
             </button>
           </div>
@@ -212,7 +224,7 @@
             class="h-2/3 px-3 py-5 rounded-xl flex items-end bg-cover bg-center"
             style="background-image: url('/public/automatizaciones.png')">
             <button
-              class="px-4 py-1 bg-orange-500 rounded text-sm font-bold justify-center items-center gap-4 flex">
+              class="px-4 py-1 bg-orange-500 rounded text-sm lg:text-base font-bold justify-center items-center gap-4 flex">
               Dispositivos de Control y Automatización
             </button>
           </div>
@@ -220,7 +232,8 @@
           <div
             class="h-full px-3 py-5 rounded-xl flex items-end bg-cover bg-center"
             style="background-image: url('/public/planos.jpeg')">
-            <button class="px-5 py-1 bg-orange-500 rounded text-sm font-bold">
+            <button
+              class="px-5 py-1 bg-orange-500 rounded text-sm lg:text-base font-bold">
               Planos Eléctricos
             </button>
           </div>
@@ -229,7 +242,8 @@
           <div
             class="h-full px-3 py-5 rounded-xl flex items-end bg-cover bg-center"
             style="background-image: url('/public/pilares.png')">
-            <button class="px-5 py-1 bg-orange-500 rounded text-sm font-bold">
+            <button
+              class="px-5 py-1 bg-orange-500 rounded text-sm lg:text-base font-bold">
               Pilares
             </button>
           </div>
@@ -237,7 +251,7 @@
             class="h-2/3 px-3 py-5 rounded-xl flex items-end bg-cover bg-center"
             style="background-image: url('/public/certificado.jpeg')">
             <button
-              class="px-4 py-1 bg-orange-500 rounded text-sm font-bold justify-center items-center gap-4 flex">
+              class="px-4 py-1 bg-orange-500 rounded text-sm lg:text-base font-bold justify-center items-center gap-4 flex">
               Cértificado Apto Eléctrico
             </button>
           </div>
@@ -245,11 +259,12 @@
       </section>
 
       <section
-        class="flex w-full bg-[#5E5E5E] rounded-2xl gap-20 p-12 justify-center px-32 flex-col columns-2 xl:flex-row">
-        <div class="flex flex-col gap-10 justify-center items-center w-full xl:w-1/2">
+        class="flex w-full bg-[#5E5E5E] rounded-2xl gap-20 lg:p-12 justify-center p-5 lg:px-32 flex-col columns-2 xl:flex-row">
+        <div
+          class="flex flex-col gap-10 justify-center items-center w-full xl:w-1/2">
           <div class="flex items-center gap-3">
             <img
-              class="w-24 h-24"
+              class="w-20 h-20 lg:w-24 lg:h-24"
               src="/public/riesgo.png"
               alt="imagen solucion de fallos" />
             <div>
@@ -269,7 +284,7 @@
           </div>
           <div class="flex items-center gap-3">
             <img
-              class="w-24 h-24"
+              class="w-20 h-20 lg:w-24 lg:h-24"
               src="/public/rayo.png"
               alt="imagen solucion de fallos" />
             <div>
@@ -285,34 +300,51 @@
           </div>
         </div>
 
-        <div class="flex flex-col justify-center items-center gap-5">
-          <p>
+        <div class="flex flex-col w-full gap-5 lg:w-2/5 justify-between">
+          <p class="lg:text-lg">
             Contamos con la experiencia de mas de
             <strong class="text-orange-400">20 años en el rubro</strong>.
-            <br /><br />
+          </p>
+          <p class="lg:text-lg">
             Estamos alineados a la
             <strong class="text-orange-400">Seguridad Eléctrica</strong> donde
-            nos abala la matriculación provincial ERSEP. <br /><br />
+            nos abala la matriculación provincial ERSEP.
+          </p>
+          <p class="lg:text-lg">
             Cumplimos estrictamente con las normas
-            <strong class="text-orange-400">IEC y AEA</strong> . <br /><br />
+            <strong class="text-orange-400">IEC y AEA</strong> .
+          </p>
+          <p class="lg:text-lg">
             Trabajamos con materiales certificados bajo
             <strong class="text-orange-400">IRAM y de calidad</strong>.
           </p>
 
           <div class="flex w-full gap-5">
-            <img src="/public/iec.png" alt="" />
-            <img src="/public/aea.png" alt="" />
-            <img src="/public/iram.png" alt="" />
-            <img src="/public/ersep.png" alt="" />
+            <img
+              class="w-14 h-14 lg:w-20 lg:h-20"
+              src="/public/iec.png"
+              alt="Logo IEC" />
+            <img
+              class="w-14 h-14 lg:w-20 lg:h-20"
+              src="/public/aea.png"
+              alt="Logo AEA" />
+            <img
+              class="w-14 h-14 lg:w-20 lg:h-20"
+              src="/public/iram.png"
+              alt="Logo IRAM" />
+            <img
+              class="w-14 h-14 lg:w-20 lg:h-20"
+              src="/public/ersep.png"
+              alt="Logo ERSEP" />
           </div>
         </div>
       </section>
 
       <section
-        class="flex justify-center items-center rounded-lg h-[30rem] w-full bg-center"
+        class="flex h-full w-full justify-center items-center rounded-lg lg:h-[30rem] py-5 bg-center"
         style="background-image: url('/public/torres.jpeg')">
         <div
-          class="flex gap-32 px-16 py-11 bg-black bg-opacity-25 rounded-2xl backdrop-blur-lg">
+          class="flex flex-col lg:flex-row gap-10 lg:gap-32 px-16 py-11 bg-black bg-opacity-25 rounded-2xl backdrop-blur-lg">
           <div class="flex flex-col gap-3">
             <img
               class="py-5"
@@ -335,7 +367,12 @@
             <h2 class="font-light text-stone-300">
               sesc.especializado@gmail.com
             </h2>
-            <a class="underline" href="tel:+543512922784">Enviarnos un mail</a>
+            <a
+              class="underline"
+              href="mailto:sesc.especializado@gmail.com"
+              target="_blank"
+              >Enviarnos un mail</a
+            >
           </div>
           <div class="flex flex-col gap-3">
             <img
@@ -346,28 +383,46 @@
               width="50" />
             <h1 class="font-bold text-lg">UBICACIÓN</h1>
             <h2 class="font-light text-stone-300">Córdoba, Argentina</h2>
-            <a class="underline" href="tel:+543512922784">Visitar Mapa</a>
+            <a
+              class="underline"
+              href="https://maps.app.goo.gl/VjgXKgWryJLEFF9Y6?g_st=iw"
+              target="_blank"
+              >Visitar Mapa</a
+            >
           </div>
         </div>
       </section>
       <section
         class="w-full py-5 flex-col justify-center items-center gap-4 flex">
-        <div class="flex gap-16 w-full justify-center">
-          <img class="w-12 h-12" src="/public/icon-fb.svg" />
-          <img class="w-12 h-12" src="/public/icon-ig.svg" />
-          <img class="w-12 h-12" src="/public/icon-wsp.svg" />
-          <button
-            class="bg-orange-500 px-3 py-3 rounded-md text-sm hover:bg-white hover:text-orange-500 transition-all">
+        <div
+          class="flex flex-col lg:flex-row gap-8 lg:gap-16 w-full justify-center px-5">
+          <div class="flex gap-16 justify-center">
+            <a href="" target="_blank">
+              <img class="w-12 h-12" src="/public/icon-fb.svg" />
+            </a>
+            <a href="" target="_blank">
+              <img class="w-12 h-12" src="/public/icon-ig.svg" />
+            </a>
+            <a href="https://wa.me/543512922784" target="_blank">
+              <img class="w-12 h-12" src="/public/icon-wsp.svg" />
+            </a>
+          </div>
+
+          <a
+            class="flex justify-center items-center bg-orange-500 px-3 py-3 rounded-md text-sm hover:bg-white hover:text-orange-500 transition-all"
+            href="tel:+543512922784">
             LLAMAR AHORA
-          </button>
+          </a>
         </div>
 
-        <div class="justify-center items-center gap-3 flex">
+        <div class="w-full justify-center items-center gap-3 py-5 flex">
           <img class="w-10 h-10 rounded-full" src="/public/logo.png" />
-          <h2 class="text-sm">
-            Servicio Especializado SC - © Copyright 2023. All Rights Reserved |
-            Site Designed & Maintained by Nahuel Castro
-          </h2>
+          <div class="flex flex-col">
+            <h2 class="text-lg">Servicio Especializado SC</h2>
+            <h2 class="font-light">
+              Site Designed & Maintained by Nahuel Castro
+            </h2>
+          </div>
         </div>
       </section>
     </div>
