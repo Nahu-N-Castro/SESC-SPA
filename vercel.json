@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     { "src": "index.html", "use": "@now/static" },
-    { "src": "public/styles.css", "use": "@now/node" }
+    { "src": "styles.css", "use": "@now/node" }
   ],
   "routes": [
     { "handle": "filesystem" },
