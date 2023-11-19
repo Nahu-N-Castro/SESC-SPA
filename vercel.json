@@ -6,7 +6,7 @@
       "use": "@now/static"
     },
     {
-      "src": "public/css/*.css",
+      "src": "public/styles.css",
       "use": "@now/node"
     }
   ],
