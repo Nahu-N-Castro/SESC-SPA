@@ -1,14 +1,8 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "index.html",
-      "use": "@now/static"
-    },
-    {
-      "src": "public/*.css",
-      "use": "@now/node"
-    }
+    { "src": "index.html", "use": "@now/static" },
+    { "src": "styles.css", "use": "@now/node" }
   ],
   "routes": [
     { "handle": "filesystem" },
